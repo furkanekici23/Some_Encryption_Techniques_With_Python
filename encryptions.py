@@ -1,4 +1,5 @@
 import math
+import numpy as np 
 alfabe_en = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 alfabe_tr = ['a', 'b', 'c', 'ç', 'd', 'e', 'f', 'g', 'ğ', 'h', 'ı', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'ö', 'p', 'r', 's', 'ş', 't', 'u', 'ü', 'v', 'y', 'z']
 
@@ -440,7 +441,7 @@ if sec == 7 and language ==1 :
      new_word_list = []
     
      while(True):
-        print("Please enter the numbers p and q, which have to be coprime.")
+        print("Please enter the numbers p and q, which both have to be prime.")
         p=int(input("p : "))
         q=int(input("q : "))
         if   math.gcd(p,q) == 1:
@@ -448,13 +449,13 @@ if sec == 7 and language ==1 :
             fi=(p-1)*(q-1)
             break
         else :
-            print("p and q have to be coprime.Try again !")
+            print("p and q have to be prime.Try again !")
 
      while(True):
          print("phi : ",fi)          
          e= int(input("Enter a number e that satisfies the inequality 1 < e < phi and is coprime to phi:"))
          if   (math.gcd(e,fi)) != 1:
-             print("e and phi have to be coprime.Try again !")
+             print("e and phi have to be prime.Try again !")
          else :
              length = len(word)
              word_list=list(word)
@@ -484,7 +485,7 @@ if sec == 7 and language ==2 :
      new_word_list = []
     
      while(True):
-        print("Aralarında asal olmak üzere p ve q sayılarını sırasıyla giriniz.")
+        print("Her ikisi de asal sayı olmak üzere p ve q sayılarını sırasıyla giriniz.")
         p=int(input("p : "))
         q=int(input("q : "))
         if   math.gcd(p,q) == 1:
@@ -492,7 +493,7 @@ if sec == 7 and language ==2 :
             fi=(p-1)*(q-1)
             break
         else :
-            print("p ve q aralarında asal olmalı.Tekrar deneyin !")
+            print("p ve q  asal sayı olmalı.Tekrar deneyin !")
 
      while(True):
          print("fi : ",fi)          
@@ -540,7 +541,7 @@ if sec == 8 and language ==1:
          number_list.append(numbers) 
 
  while(True):
-     print("Please enter the numbers p and q, which have to be coprime.")
+     print("Please enter the numbers p and q, which both have to be prime.")
      p=int(input("p : "))
      q=int(input("q : "))
      if   math.gcd(p,q) == 1:
@@ -548,7 +549,7 @@ if sec == 8 and language ==1:
          fi=(p-1)*(q-1)
          break
      else :
-         print("p and q have to be coprime.Try again !")
+         print("p and q have to be prime.Try again !")
 
 
  d=int(input("Enter the number d: "))
@@ -585,7 +586,7 @@ if sec == 8 and language ==2:
          number_list.append(numbers) 
 
  while(True):
-     print("Aralarında asal olmak üzere p ve q sayılarını sırasıyla giriniz.")
+     print("Her ikisi de asal sayı olmak üzere p ve q sayılarını sırasıyla giriniz.")
      p=int(input("p : "))
      q=int(input("q : "))
      if   math.gcd(p,q) == 1:
@@ -593,7 +594,7 @@ if sec == 8 and language ==2:
          fi=(p-1)*(q-1)
          break
      else :
-         print("p ve q aralarında asal olmalı.Tekrar deneyin !")
+         print("p ve q  asal sayı olmalı.Tekrar deneyin !")
 
 
  d=int(input("d sayısını giriniz: "))
@@ -736,19 +737,3 @@ if sec == 10 and language ==2 :
 
 
 #if sec == 11 and language ==2 : #AES (Advanced Encryption Standard)
-
-
-
-
-
-
-
-    
-
-      
-     
-
-  
-    
-
-
